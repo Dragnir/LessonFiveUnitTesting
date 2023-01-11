@@ -9,6 +9,7 @@
 
     {
         private Calculator calculator;
+        private static TestContext testContextInstance;
 
         [TestInitialize]
         public void SetUpTest()
@@ -17,9 +18,15 @@
         }
 
         [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "AbsDataset.xml", "CheckABSWithDouble", DataAccessMethod.Sequential)]
+        [DeploymentItem("Dataset")]
         public void CheckABSWithDouble()
         {
-            Assert.AreEqual(4, calculator.Abs(-4));
+            double inputData = Convert.ToDouble(testContextInstance.DataRow["InputParameter"]);
+            double expectedResult = Convert.ToDouble(testContextInstance.DataRow["Result"]);
+            double actualResult = calculator.Abs(inputData);
+
+            Assert.AreEqual(expectedResult, actualResult, $"Absorption current value of double '{inputData} is incorrect");
         }
 
         [TestMethod]

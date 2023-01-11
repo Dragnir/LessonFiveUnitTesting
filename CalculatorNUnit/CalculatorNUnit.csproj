@@ -7,8 +7,8 @@
     <ProjectGuid>{0F29F3A0-EDD2-406D-BB2C-73243DCEDB5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NUnit</RootNamespace>
-    <AssemblyName>NUnit</AssemblyName>
+    <RootNamespace>CalculatorNUnit</RootNamespace>
+    <AssemblyName>CalculatorNUnit</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

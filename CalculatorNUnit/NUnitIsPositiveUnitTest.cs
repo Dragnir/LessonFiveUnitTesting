@@ -5,6 +5,7 @@ using NUnit.Framework;
 namespace NUnit
 {
 	[TestFixture]
+    [Parallelizable]
     public class NUnitIsPositiveUnitTest
     {
         private Calculator calculator;
