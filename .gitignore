@@ -14,7 +14,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+# *.dll
 
 # Fortran module files
 *.mod
@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+/.vs
+/CalculatorMSTests/bin
+/CalculatorMSTests/obj
+/packages
+/CalculatorNUnit/bin
+/CalculatorNUnit/obj
