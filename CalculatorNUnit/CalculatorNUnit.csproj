@@ -47,8 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NUnitAbsTest.cs" />
+    <Compile Include="NUnitAddTest.cs" />
+    <Compile Include="NUnitCosinusTest.cs" />
+    <Compile Include="NUnitDividedTest.cs" />
     <Compile Include="NUnitIsNegativeUnitTest.cs" />
     <Compile Include="NUnitIsPositiveUnitTest.cs" />
+    <Compile Include="NUnitMultiplayTest.cs" />
+    <Compile Include="NUnitPowTest.cs" />
+    <Compile Include="NUnitSinusTest.cs" />
+    <Compile Include="NUnitSquareRoot.cs" />
+    <Compile Include="NUnitSubTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
