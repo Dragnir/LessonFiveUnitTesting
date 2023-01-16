@@ -77,9 +77,6 @@
     <None Include="runMSTestSettings.runsettings" />
     <None Include="runMSTestSettings.testsettings" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="AbsDataset.xml" />
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

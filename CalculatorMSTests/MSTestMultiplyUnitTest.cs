@@ -25,7 +25,6 @@
         [TestMethod]
         [DataRow(0.5, "2.0", 1.0)]
         [DataRow(15.0, "3.0", 45.0)]
-        //Seems a defect with method Multiply
         public void MultiplyWithString(double a, string b, double expectedValue)
         {
             Assert.AreEqual(expectedValue, calculator.Multiply(a, Convert.ToDouble(b)));

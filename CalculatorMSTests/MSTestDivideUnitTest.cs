@@ -19,18 +19,16 @@
         [TestMethod]
         public void DivideWithDoubleAndInt()
         {
-            int a = 355589;
-            double b = 5.1;
-
-            Assert.AreEqual(69723.333, calculator.Divide(Convert.ToDouble(a), b), 0.001);
+            Assert.AreEqual(69723.333, calculator.Divide(355589.0, 5.1));
         }
 
         [TestMethod]
         [DataRow(6, "2", 3)]
         [DataRow(15, "3", 5)]
-        public void DivideIntStringDataDriven(int a, string b, int expectedValue)
+        [DataRow(15, "0", 0)]
+        public void DivideIntStringDataDriven(double a, string b, double expectedValue)
         {
-            Assert.AreEqual(expectedValue, calculator.Divide(Convert.ToDouble(a), Convert.ToDouble(b)));
+            Assert.AreEqual(expectedValue, calculator.Divide(a, Convert.ToDouble(b)));
         }
 
         [TestCleanup]

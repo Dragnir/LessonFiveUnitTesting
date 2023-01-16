@@ -17,12 +17,9 @@
         }
 
         [TestMethod]
-        // Seems a Defect with method Pow
         public void PowWithDouble()
         {
-            int a = 5;
-            double b = 2;
-            Assert.AreEqual(25.0, calculator.Pow(a, b));
+            Assert.AreEqual(25.0, calculator.Pow(5, 2));
         }
 
         [TestMethod]

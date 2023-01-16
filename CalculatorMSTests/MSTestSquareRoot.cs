@@ -25,8 +25,7 @@ namespace MSTests
         [TestMethod]
         public void CheckSQRTString()
         {
-            string a = "25";
-            Assert.AreEqual(5, calculator.Sqrt(Convert.ToDouble(a)));
+            Assert.AreEqual(5, calculator.Sqrt(Convert.ToDouble("25")));
         }
 
         [TestCleanup]

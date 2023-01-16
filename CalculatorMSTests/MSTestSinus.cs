@@ -16,16 +16,15 @@
         }
 
         [TestMethod]
-        public void CheckSin180Double()
+        public void CheckSin180()
         {
-            Assert.AreEqual(-0.8, calculator.Sin(180), 0.1);
+            Assert.AreEqual(0, calculator.Sin(180));
         }
 
         [TestMethod]
         public void CheckSin360String()
         {
-            string a = "360";
-            Assert.AreEqual(-0.284, calculator.Cos(Convert.ToDouble(a)), 0.001);
+            Assert.AreEqual(0, calculator.Cos(Convert.ToDouble("360")));
         }
 
         [TestCleanup]
